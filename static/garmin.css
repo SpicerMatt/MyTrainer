@@ -1,0 +1,89 @@
+[hidden] { display: none !important; }
+.side-nav { display: grid; gap: 8px; margin-top: 65px; }
+.side-nav .nav { width: 100%; margin: 0; border: 0; color: #dce8df; text-align: left; cursor: pointer; }
+.side-nav .nav.active { background: #d9ee93; color: #243b2c; }
+.intro-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.source-tag { display: inline-block; margin-left: 5px; padding: 2px 6px; border-radius: 3px; background: #eef1eb; color: #667568; font-size: 10px; }
+.source-tag.garmin { background: #e5eee3; color: #42644a; }
+.garmin-detail-button { padding: 8px 11px; font-size: 11px; }
+.view { min-width: 0; }
+.garmin-intro { padding-bottom: 30px; }
+.garmin-intro h1 { max-width: 650px; }
+.garmin-stats article { min-height: 160px; }
+.garmin-list { margin-top: 38px; }
+.garmin-list-head { align-items: end; gap: 18px; }
+.search-label { margin-left: auto; color: #69796b; font-size: 12px; }
+#garmin-search { width: min(300px, 42vw); border: 1px solid #dce2d9; border-radius: 5px; background: white; padding: 11px 12px; font: inherit; font-size: 13px; }
+#garmin-search:focus-visible { outline: 2px solid #507d42; outline-offset: 2px; }
+.table-wrap { width: 100%; overflow-x: auto; border-top: 1px solid #dce2d9; }
+.table-wrap table { width: 100%; border-collapse: collapse; min-width: 850px; text-align: left; }
+.table-wrap th { padding: 12px 10px; color: #758174; font-size: 10px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+.table-wrap td { padding: 14px 10px; border-top: 1px solid #e6e9e3; color: #58655c; font-size: 12px; white-space: nowrap; }
+.table-wrap tbody tr { cursor: pointer; transition: background .15s ease; }
+.table-wrap tbody tr:hover, .table-wrap tbody tr:focus-visible { background: #edf2e8; outline: none; }
+.table-wrap .activity-name { color: #24332c; font-weight: 600; }
+#garmin-message { min-height: 20px; margin: -4px 0 14px; color: #5f765f; font-size: 12px; overflow-wrap: anywhere; }
+#sync-garmin:disabled { cursor: wait; opacity: .7; }
+.detail-dialog { width: min(920px, calc(100vw - 32px)); max-height: min(88vh, 900px); overflow: auto; }
+.detail-dialog .section-head { align-items: flex-start; }
+.detail-dialog h3 { margin: 0; }
+.detail-dialog .eyebrow { margin: 0 0 8px; }
+.detail-dialog .muted { margin: 8px 0 0; }
+.detail-highlights { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 24px 0; }
+.detail-highlights div { display: grid; gap: 8px; padding: 14px; background: #f3f5ef; border-radius: 5px; }
+.detail-highlights span { color: #758174; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
+.detail-highlights strong { font-size: 14px; font-weight: 600; overflow-wrap: anywhere; }
+.detail-dialog details { border-top: 1px solid #dce2d9; padding: 14px 0; }
+.detail-dialog summary { cursor: pointer; color: #34463a; font-size: 13px; font-weight: 600; }
+.detail-dialog pre { max-height: 360px; overflow: auto; padding: 16px; background: #f3f5ef; color: #34463a; font-size: 11px; line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; }
+.summary-group { margin-top: 18px; }
+.summary-group h4 { margin: 0 0 4px; color: #596a5c; font-size: 11px; font-weight: 600; text-transform: uppercase; }
+.summary-fields { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; }
+.summary-fields > div { min-width: 0; padding: 10px 12px 10px 0; border-bottom: 1px solid #e6e9e3; }
+.summary-fields dt { margin-bottom: 5px; color: #7c867d; font-size: 11px; }
+.summary-fields dd { margin: 0; color: #26382c; font-size: 13px; font-weight: 500; overflow-wrap: anywhere; }
+.summary-raw { margin-top: 14px; }
+.coach-intro { align-items: flex-end; gap: 20px; }
+.coach-status { display: flex; align-items: center; gap: 9px; margin-bottom: 42px; color: #667568; font-size: 12px; }
+.status-dot { width: 8px; height: 8px; border-radius: 50%; background: #b7c1b7; }
+.coach-shell { max-width: 900px; border-top: 1px solid #dce2d9; }
+.coach-messages { display: flex; min-height: 260px; max-height: min(52vh, 560px); flex-direction: column; gap: 12px; overflow-y: auto; padding: 22px 4px; }
+.chat-message { max-width: min(78%, 680px); border-radius: 8px; padding: 13px 16px; background: #fff; border: 1px solid #e2e7dd; color: #34463a; }
+.chat-message p { margin: 0; font-size: 14px; line-height: 1.65; white-space: pre-wrap; overflow-wrap: anywhere; }
+.chat-message.user { align-self: flex-end; background: #e7efcf; border-color: #e7efcf; }
+.chat-message.error { border-color: #d78c75; color: #8e3f2a; }
+.coach-form { display: flex; align-items: flex-end; gap: 12px; padding: 12px; border: 1px solid #cfd8cb; border-radius: 7px; background: #fff; }
+.coach-form textarea { width: 100%; min-height: 48px; max-height: 150px; resize: vertical; border: 0; outline: 0; background: transparent; color: #24332c; font: inherit; font-size: 14px; line-height: 1.5; }
+.coach-form button { width: 42px; height: 42px; flex: 0 0 42px; padding: 0; font-size: 22px; }
+.coach-form button:disabled { opacity: .55; cursor: wait; }
+.coach-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 12px; color: #7c867d; font-size: 11px; }
+.coach-footer button { padding: 7px 10px; font-size: 11px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@media (max-width: 800px) {
+  body { display: block; }
+  aside { position: static; width: auto; min-height: 0; padding: 18px 22px 12px; }
+  .brand { font-size: 22px; }
+  .brand span { margin-top: 5px; }
+  .side-nav { display: flex; gap: 8px; margin-top: 18px; }
+  .side-nav .nav { width: auto; padding: 11px 13px; }
+  .aside-bottom { display: none; }
+  main { width: 100%; margin: 0; padding: 18px 22px 32px; }
+  .garmin-list-head { align-items: stretch; flex-wrap: wrap; }
+  .search-label { margin-left: 0; align-self: center; }
+  #garmin-search { flex: 1 1 170px; width: auto; }
+  .coach-intro { align-items: flex-start; flex-direction: column; gap: 0; }
+  .coach-intro h1 { font-size: 38px; }
+  .coach-status { margin: 0; }
+  .coach-messages { min-height: 220px; max-height: 54vh; padding-inline: 0; }
+  .chat-message { max-width: 90%; }
+  .coach-footer { align-items: flex-start; flex-direction: column; }
+}
+@media (max-width: 520px) {
+  .garmin-intro { align-items: flex-start; flex-direction: column; gap: 18px; }
+  .garmin-intro h1 { font-size: 38px; }
+  .garmin-stats { grid-template-columns: 1fr; gap: 10px; }
+  .garmin-stats article { min-height: 0; padding: 17px; }
+  .garmin-stats h2 { margin: 10px 0 6px; font-size: 32px; }
+  .detail-highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .summary-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

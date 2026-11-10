@@ -1,4 +1,5 @@
 __pycache__/
 data/
+garmin_data/
 .venv/
 .env
